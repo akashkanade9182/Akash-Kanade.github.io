@@ -1,0 +1,36 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+
+  }
+  .card {
+    content: "";
+    width:var(  --card-width);
+  height:var(--card-height);
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+     
+      animation: spin 2.5s linear infinite;
+      animation-name: moveleft;
+      animation-duration: 0.9s;
+      animation-iteration-count: 1;
+  }
+  @keyframes moveleft {
+    0%{
+        opacity: 0;
+        transform: translateX(150%); 
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0); 
+    }
+    
+  }
+  

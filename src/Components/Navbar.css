@@ -1,0 +1,16 @@
+.navbarbox{
+    border:1px solid black;
+    border-radius: 7px;
+    height:45px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+}
+.active {
+    text-decoration: none;
+    color: blueviolet;
+  }
+  .default {
+    text-decoration: none;
+    color: white;
+  }
